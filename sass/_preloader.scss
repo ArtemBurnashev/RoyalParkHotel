@@ -1,7 +1,7 @@
-#preloader>p {
-    display: none;
-}
-
+#preloader{
+   transition: opacity .3s ease;
+      
+}  
 #preloader__content {
     display: block;
     position: fixed;
@@ -13,4 +13,8 @@
     min-width: 1000px;
     background: #4b6681 url(http://hello-site.ru//main/images/preloads/ball-triangle.svg) center center no-repeat;
     background-size: 41px;
+}
+
+.done#preloader{
+    opacity: 0;
 }
