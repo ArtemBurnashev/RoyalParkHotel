@@ -1,0 +1,89 @@
+.dream-holidays {
+
+    position: relative;
+    padding:150px 0 100px;
+    &__info{
+        margin:7% 0 0 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $main-color;
+        opacity: 0.8;
+        margin: 0 0 20px;
+    }
+
+  
+
+    &__subtitle {
+
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 140%;
+        color: $text-color;
+        margin: 0 0 40px
+    }
+
+   
+
+    &__play{
+        
+        position: absolute;
+        left: 50%;
+        width: 65px;
+        height: 65px;
+       
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        background-color: #fff;
+        border-radius: 100%;
+        svg{
+         position: relative;
+         left: 50%;
+         top: 50%;
+         transform: translate(-35%, -50%,);
+         width: 25px;
+         height: 25px;
+        }
+        
+        
+    }
+    &__btn {
+        @include btn;
+    }
+
+}
+
+.video-series {
+    max-width:590px;
+    height: auto;
+    position: relative;
+
+}
+.video{
+    position: relative;
+    left: 0px;
+    top: 53px;
+    z-index: 5;
+    max-width: 540px;
+    img{
+       width: 100%;
+    }
+}
+.subvideo{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 75%;
+    height: auto;
+   
+}

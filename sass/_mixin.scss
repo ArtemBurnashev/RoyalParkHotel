@@ -1,0 +1,21 @@
+@mixin  btn {
+    padding: 15px 27px;
+    background-color: $main-color;
+    text-decoration: none;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin: auto 0;
+   
+    
+}
+
+@mixin title {
+    margin:0 0 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: $text-color;
+
+    
+}
