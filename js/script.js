@@ -1,3 +1,7 @@
+
+window.addEventListener("DOMContentLoaded", function () {
+
+
 const header =  document.querySelector('header');
 window.addEventListener('scroll' , ()=>{
    if(window.innerWidth>767){ 
@@ -154,4 +158,4 @@ function couruselSlider(wrapper, elem){
     }
       });         
     });
-}
+}});
