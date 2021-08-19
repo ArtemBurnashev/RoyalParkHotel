@@ -88,9 +88,6 @@ input.forEach((email, index)=>{
             validDone(email, errorMessage[index], "");
             submitEmail[index].disabled = false;
             submitEmail[index].style.backgroundColor = '#1B75BB';
-            submitEmail[i].disabled = true;
-            submitEmail[i].style.backgroundColor = "#87ceeb";
-
     }
     });
 });
@@ -100,6 +97,9 @@ submitEmail.forEach((s,i)=>{
         e.preventDefault(); 
         input[i].value = '';
         input[i].style.border = '1px solid rgba(0, 0, 0, 0.25)';
+        submitEmail[i].disabled = true;
+        submitEmail[i].style.backgroundColor = "#87ceeb";
+
     });
 });
 
