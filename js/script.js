@@ -88,8 +88,8 @@ input.forEach((email, index)=>{
             validDone(email, errorMessage[index], "");
             submitEmail[index].disabled = false;
             submitEmail[index].style.backgroundColor = '#1B75BB';
-
-
+            submitEmail[i].disabled = true;
+            submitEmail[i].style.backgroundColor = "#87ceeb";
 
     }
     });
