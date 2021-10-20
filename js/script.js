@@ -38,9 +38,9 @@ anchors.forEach(function(item) {
   item.addEventListener('click', function(e) {
     e.preventDefault();
     
-    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset - 50;
     let scroller = setInterval(function() {
-    let scrollBy = coordY / framesCount;
+    let scrollBy = (coordY) / framesCount;
       
       if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
         window.scrollBy(0, scrollBy);
@@ -100,6 +100,9 @@ submitEmail.forEach((s,i)=>{
         e.preventDefault(); 
         input[i].value = '';
         input[i].style.border = '1px solid rgba(0, 0, 0, 0.25)';
+        submitEmail[i].disabled = true;
+        submitEmail[i].style.backgroundColor = "#87ceeb";
+
     });
 });
 
